@@ -1,0 +1,10 @@
+actions
+0 start
+1 finish
+
+constraints
+
+links
+0 1 in c0 p0
+0 1 top c0 p0
+0 1 unloaded r0

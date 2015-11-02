@@ -1,0 +1,38 @@
+actions
+0 start
+1 finish
+2 put k1 l1 c0 G p1
+3 unload k1 l1 c0 r0
+4 move r0 l0 l1
+5 load k0 l0 c0 r0
+6 take k0 l0 c0 G p0
+
+constraints
+3 < 2
+4 < 3
+5 < 3
+5 < 4
+6 < 5
+
+links
+2 1 in c0 p1
+0 2 belong k1 l1
+0 2 attached p1 l1
+3 2 holding k1 c0
+0 2 top G p1
+0 3 belong k1 l1
+4 3 at r0 l1
+5 3 loaded r0 c0
+0 3 empty k1
+0 4 adjacent l0 l1
+0 4 at r0 l0
+0 4 free l1
+0 5 belong k0 l0
+6 5 holding k0 c0
+0 5 at r0 l0
+0 5 unloaded r0
+0 6 belong k0 l0
+0 6 attached p0 l0
+0 6 empty k0
+0 6 top c0 p0
+0 6 on c0 G
